@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  width: 100%;
+  background-color: #fff;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 50px;
+}
+
+.info-grupo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#info-icone {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f38067;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.info-grupo h1 {
+  color: #2f3140;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.info-grupo p {
+  color: #2f3140;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.divisor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 3px;
+  height: 600px;
+  background-color: #f38067;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0;
+}
+
+form h1 {
+  color: #2f3140;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+form p {
+  color: #444;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+form input,
+button,
+textarea {
+  border-radius: 5px;
+  appearance: none;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form input {
+  padding: 15px 20px;
+  background-color: #e5e4e2;
+}
+
+form textarea {
+  height: 200px;
+  padding: 15px 20px;
+  background-color: #e5e4e2;
+  resize: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+form button {
+  width: 150px;
+  height: 40px;
+  background-color: #f38067;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    flex-direction: column;
+    height: 1000px;
+    padding: 30px 20px;
+  }
+
+  .info-container {
+    gap: 20px;
+  }
+
+  #info-icone {
+    font-size: 2.5rem;
+  }
+
+  .info-grupo h1 {
+    font-size: 2rem;
+    margin-top: 15px;
+  }
+
+  .info-grupo p {
+    font-size: 1rem;
+  }
+
+  .divisor {
+    flex-direction: row;
+    width: 80px;
+    height: 20px;
+    background-color: #f38067;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  form h1 {
+    font-size: 2rem;
+  }
+
+  form p {
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: start;
+  }
+
+  form input,
+  button,
+  textarea {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+
+  form input {
+    padding: 10px;
+  }
+
+  form textarea {
+    height: 150px;
+    padding: 10px;
+  }
+
+  form button {
+    width: 150px;
+    height: 30px;
+  }
+}

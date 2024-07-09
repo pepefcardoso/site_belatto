@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belatto Sorvetes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="menu-rodape-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <!-- Seção Menu -->
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("navbar.html");
+      });
+    </script>
+    <!-- Seção Menu -->
+
+    <div class="main">
+      <div class="main-container">
+        <!-- Seção Card Principal -->
+        <div class="main-card">
+          <div class="main-card-content">
+            <h1>SORVETES BELATTO</h1>
+            <p>Transforme momentos comuns em memórias deliciosas</p>
+            <p>
+              Cremosos, irresistíveis e inesquecíveis, assim são nossos sorvetes
+              e açaís
+            </p>
+            <button>Conheça nossos produtos ➜</button>
+          </div>
+
+          <img src="images/card-1.jpg" alt="Imagem 1" />
+        </div>
+        <!-- Seção Card Principal -->
+
+        <!-- Seção Slider de Imagens -->
+        <div class="slider">
+          <div class="slides">
+            <!-- Botões Radio -->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <!-- Botões Radio -->
+
+            <!-- Slides -->
+            <div class="slide first">
+              <img src="images/prop_1.jpg" alt="Imagem 1" />
+            </div>
+            <div class="slide">
+              <img src="images/prop_2.jpg" alt="Imagem 2" />
+            </div>
+            <div class="slide">
+              <img src="images/prop_3.jpg" alt="Imagem 3" />
+            </div>
+            <div class="slide">
+              <img src="images/prop_4.jpg" alt="Imagem 4" />
+            </div>
+            <!-- Slides -->
+
+            <!-- Auto Navegação -->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            <!-- Auto Navegação -->
+          </div>
+
+          <!-- Navegação Manual -->
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+          <!-- Navegação Manual -->
+        </div>
+        <!-- Seção Slider de Imagens -->
+      </div>
+
+      <!-- Seção Formulário Contato -->
+      <form id="form" class="form">
+        <h1>Não perca nossas promoções, cadastre-se já!</h1>
+        <div class="form-content">
+          <div class="form-group">
+            <input type="text" placeholder="Seu melhor e-mail" />
+            <button>CADASTRAR</button>
+          </div>
+          <div class="form-lgpd">
+            <input type="checkbox" name="checkbox" />
+            <label for="checkbox"
+              >Aceito receber informações da Belatto Sorvetes</label
+            >
+          </div>
+        </div>
+      </form>
+      <!-- Seção Formulário Contato -->
+    </div>
+
+    <!-- Rodapé -->
+    <div id="rdp-placeholder"></div>
+    <script>
+      $(function () {
+        $("#rdp-placeholder").load("rodape.html");
+      });
+    </script>
+    <!-- Rodapé -->
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,366 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Card principal*/
+.main {
+  background-color: #fff;
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  width: 100%;
+  gap: 50px;
+  box-sizing: border-box;
+}
+
+.main-card {
+  height: 700px;
+  width: calc(100% - 560px);
+  background-color: #2f3140;
+  position: relative;
+  color: #fff;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+}
+
+.main-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 35px;
+  height: 50%;
+  box-sizing: border-box;
+}
+
+.main-card img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 0 0.5rem 0.5rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.main-card-content h1 {
+  font-size: 4rem;
+  margin: 0;
+  text-align: start;
+}
+
+.main-card-content p {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: start;
+}
+
+.main-card-content button {
+  cursor: pointer;
+  margin: 0;
+  padding: 10px 20px;
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  transition: all 0.2s linear;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.main-card-content button:hover {
+  background: #f38067;
+}
+
+@media screen and (max-width: 1420px) {
+  .main-card-content {
+    padding: 25px;
+  }
+
+  .main-card-content h1 {
+    font-size: 3rem;
+  }
+
+  .main-card-content p {
+    font-size: 1.2rem;
+  }
+
+  .main-card-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .main-container {
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .main-card {
+    width: 100%;
+  }
+
+  .main-card-content {
+    padding: 35px;
+  }
+
+  .main-card-content h1 {
+    font-size: 4rem;
+  }
+
+  .main-card-content p {
+    font-size: 1.5rem;
+  }
+
+  .main-card-content button {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-card-content {
+    padding: 20px;
+  }
+
+  .main-card-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .main-card-content p {
+    font-size: 1.3rem;
+  }
+
+  .main-card-content button {
+    font-size: 1rem;
+  }
+}
+
+/* Card principal*/
+
+/* Seção Slider de Imagens*/
+.slider {
+  width: 560px;
+  height: 700px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+}
+
+.slides {
+  display: flex;
+  width: 400%;
+  height: 700px;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 3s;
+}
+
+.slide img {
+  width: 560px;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 560px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 30px;
+}
+
+.manual-btn:hover {
+  background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}
+
+.navigation-auto div {
+  border: 2px solid #20a6ff;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 560px;
+  margin-top: 660px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 30px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+  .slider {
+    aspect-ratio: 560/700;
+    width: 100%;
+    height: auto;
+  }
+
+  .slides {
+    height: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+  }
+
+  .manual-navigation {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .navigation-auto {
+    display: none;
+  }
+}
+
+/* Seção Slider de Imagens*/
+
+/*Seção Formulário*/
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+form h1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.form-group input,
+button {
+  display: inline-block;
+  border-radius: 5px;
+  appearance: none;
+}
+
+.form-group input {
+  width: 300px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 1px solid #2f3140;
+}
+
+.form-group input:focus {
+  outline: none;
+  border: 1px solid #f38067;
+}
+
+.form-group button {
+  cursor: pointer;
+  background-color: #f38067;
+  color: #fff;
+  border: none;
+  transition: all 0.2s linear;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.form-group button:hover {
+  background: #2f3140;
+}
+
+.form-lgpd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form-lgpd label {
+  font-size: 1rem;
+  font-weight: 360;
+}
+
+/*Seção Formulário*/
