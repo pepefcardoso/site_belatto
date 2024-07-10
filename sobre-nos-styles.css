@@ -48,13 +48,13 @@ body {
 }
 
 .historia-conteudo h1 {
-  color: #2f3140;
+  color: #000000;
   font-size: 3rem;
   margin: 0;
 }
 
 .historia-conteudo p {
-  color: #2f3140;
+  color: #000000;
   font-size: 1.5rem;
   margin: 0;
 }
@@ -75,7 +75,7 @@ body {
 }
 
 .historia-conteudo a:hover {
-  background: #2f3140;
+  background: #010b73;
 }
 
 .divisor {
@@ -86,12 +86,12 @@ body {
   width: 100%;
   margin-top: 60px;
   margin-bottom: 60px;
-  background: rgba(243, 128, 103, 0.8);
+  background: rgba(1, 11, 115, 1);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .divisor h1 {
-  color: #2f3140;
+  color: #fff;
   font-size: 4rem;
   margin: 0;
 }
@@ -133,13 +133,13 @@ body {
 }
 
 .missao-conteudo h1 {
-  color: #2f3140;
+  color: #000000;
   font-size: 2.5rem;
   margin: 0;
 }
 
 .missao-conteudo p {
-  color: #2f3140;
+  color: #000000;
   font-size: 1.5rem;
   margin: 0;
 }

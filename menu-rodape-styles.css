@@ -1,7 +1,7 @@
 /*Seção Navegação Menu*/
 
 .navbar-detail {
-  background-color: #2f3140;
+  background-color: #010b73;
   height: 35px;
   display: flex;
   justify-content: center;
@@ -73,7 +73,7 @@
 }
 
 .navbar-links:hover {
-  color: #2f3140;
+  color: #000000;
   transition: all 0.3s ease;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .fa-brands:hover {
-  color: #2f3140;
+  color: #000000;
   transition: all 0.3s ease;
 }
 
@@ -198,7 +198,7 @@
 
 /* Seção Rodapé */
 .rdp {
-  background: #2f3140;
+  background: #010b73;
   height: 150px;
   display: flex;
   justify-content: center;
@@ -305,7 +305,7 @@
 }
 
 .rdp-detalhe p {
-  color: #2f3140;
+  color: #000000;
   font-size: 1rem;
 }
 

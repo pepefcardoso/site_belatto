@@ -27,7 +27,7 @@ body {
 .main-card {
   height: 700px;
   width: calc(100% - 560px);
-  background-color: #2f3140;
+  background-color: #010b73;
   position: relative;
   color: #fff;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
@@ -222,7 +222,7 @@ body {
 }
 
 .navigation-auto div {
-  border: 2px solid #20a6ff;
+  border: 2px solid #010b73;
   padding: 5px;
   border-radius: 50%;
   cursor: pointer;
@@ -273,7 +273,7 @@ body {
   }
 
   .manual-navigation {
-    width: 100%;
+    width: 95%;
     margin-bottom: 40px;
   }
 
@@ -293,6 +293,7 @@ form {
   padding: 30px;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
 }
 
 form h1 {
@@ -328,7 +329,7 @@ button {
   width: 300px;
   padding: 10px 20px;
   font-size: 1rem;
-  border: 1px solid #2f3140;
+  border: 1px solid #010b73;
 }
 
 .form-group input:focus {
@@ -348,7 +349,7 @@ button {
 }
 
 .form-group button:hover {
-  background: #2f3140;
+  background: #010b73;
 }
 
 .form-lgpd {
@@ -363,4 +364,41 @@ button {
   font-weight: 360;
 }
 
+@media screen and (max-width: 1000px) {
+  form {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  form h1 {
+    font-size: 1.4rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .form-group button {
+    padding: 10px 20px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    gap: 15px;
+  }
+  
+  form h1 {
+    font-size: 1.2rem;
+  }
+  
+  .form-group input {
+    max-width: 180px;
+  }
+}
 /*Seção Formulário*/
