@@ -11,7 +11,177 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100%;
   width: 100%;
-  margin-top: 60px;
+  height: 100%;
+  background-color: #f9f6ee;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 100px;
+}
+
+.main-container img {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.descricao-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 500px;
+  max-width: 600px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+}
+
+.descricao h1 {
+  color: #2f3140;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.descricao p {
+  color: #2f3140;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.descricao-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  background-color: #2f3140;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.descricao-container a:hover {
+  background-color: #f38067;
+  color: #2f3140;
+}
+
+.sabores-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.sabores-container h3 {
+  color: #2f3140;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.sabores-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.sabores-grid p {
+  color: #2f3140;
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    padding: 50px 25px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .descricao-container {
+    justify-content: center;
+    min-height: 100%;
+    max-width: 650px;
+    margin: 0;
+  }
+
+  .descricao h1 {
+    font-size: 2.5rem;
+  }
+
+  .descricao p {
+    font-size: 1.3rem;
+  }
+
+  .descricao-container a {
+    font-size: 1.3rem;
+  }
+
+  .sabores-container h3 {
+    font-size: 1.3rem;
+  }
+
+  .sabores-grid {
+    grid-gap: 20x;
+    grid-row-gap: 20px;
+  }
+
+  .sabores-grid p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    padding: 40px 20px;
+  }
+
+
+  .descricao-container {
+    max-width: 500px;
+  }
+
+  .descricao h1 {
+    font-size: 2rem;
+  }
+
+  .descricao p {
+    font-size: 1rem;
+  }
+
+  .descricao-container a {
+    font-size: 1rem;
+  }
+
+  .sabores-container h3 {
+    font-size: 1rem;
+  }
 }
