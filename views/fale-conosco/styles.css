@@ -129,6 +129,10 @@ form button {
   font-weight: 800;
 }
 
+form button:hover {
+  background-color: #010b73;
+}
+
 @media screen and (max-width: 800px) {
   .main {
     flex-direction: column;
