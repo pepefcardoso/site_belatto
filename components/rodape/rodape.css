@@ -1,0 +1,377 @@
+/*Seção Navegação Menu*/
+
+.navbar-detail {
+  background-color: #010b73;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  background: #f38067;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1400px;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.navbar-container-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 220px;
+  width: 220px;
+  content: url("images/logo_b2.png");
+}
+
+.navbar-container-logo img {
+  width: 220px;
+  height: 220px;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar-item {
+  height: 60px;
+}
+
+.navbar-links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.navbar-links:hover {
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.sm-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar-sm {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.fa-brands {
+  margin-left: 1.5rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.fa-brands:hover {
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar-detail {
+    height: 25px;
+  }
+
+  .navbar {
+    height: 110px;
+    font-size: 1.2rem;
+  }
+
+  .navbar-container {
+    height: 80px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .navbar-logo {
+    height: 60px;
+    width: 60px;
+    content: url("images/logo_b4.png");
+  }
+
+  .navbar-container-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .navbar-menu {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-links {
+    padding: 0 0.8rem;
+  }
+
+  .fa-brands {
+    margin-left: 0.8rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-detail {
+    height: 20px;
+  }
+
+  .navbar {
+    height: 110px;
+    font-size: 0.8rem;
+  }
+
+  .navbar-container {
+    height: 80px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .navbar-menu {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-logo {
+    height: 60px;
+    width: 60px;
+    content: url("images/logo_b4.png");
+  }
+
+  .navbar-container-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .navbar-item {
+    height: 60px;
+  }
+
+  .navbar-links {
+    padding: 0 0.8rem;
+  }
+
+  .sm-container {
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-left: 5px;
+  }
+
+  .fa-brands {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+
+/*Seção Navegação Menu*/
+
+/* Seção Rodapé */
+.rdp {
+  background: #010b73;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.rdp-container {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+.rdp-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rdp-logo-container img {
+  height: 120px;
+  width: 120px;
+}
+
+.rdp-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.rdp-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+.rdp-item {
+  height: 60px;
+}
+
+.rdp-links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1.5rem;
+  height: 100%;
+}
+
+.rdp-links:hover {
+  color: #f38067;
+  transition: all 0.3s ease;
+}
+
+.rdp-social-container {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rdp-social-container h1 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 0;
+}
+
+#rdp-sm-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.rdp-sm {
+  margin-left: 1.5rem;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.rdp-sm:hover {
+  color: #f38067;
+  transition: all 0.3s ease;
+}
+
+.rdp-detalhe {
+  display: flex;
+  height: fit-content;
+  background-color: #f38067;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.rdp-detalhe p {
+  color: #000000;
+  font-size: 1rem;
+}
+
+#rdp-detalhe-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .rdp {
+    height: 120px;
+    font-size: 0.8rem;
+  }
+
+  .rdp-container {
+    height: 90px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .rdp-menu {
+    padding: 0;
+    height: 60px;
+  }
+
+  .rdp-logo-container img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .rdp-conteudo {
+    height: 90px;
+  }
+
+  .rdp-item {
+    height: 60px;
+  }
+
+  .rdp-links {
+    padding: 0 1rem;
+  }
+
+  .rdp-social-container {
+    height: 30px;
+  }
+
+  .rdp-social-container h1 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .rdp-sm {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+
+  .rdp-detalhe {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .rdp-detalhe p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+}
+
+/* Seção Rodapé */
