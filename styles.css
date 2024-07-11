@@ -65,24 +65,23 @@ body {
   text-align: start;
 }
 
-.main-card-content button {
-  cursor: pointer;
-  margin: 0;
+.main-card-content a {
+  text-decoration: none;
   padding: 10px 20px;
   background: transparent;
   color: #fff;
   border-color: #fff;
   border-style: solid;
   border-width: 2px;
-  border-radius: 4px;
-  transition: all 0.2s linear;
-  font-family: "Josefin Sans", sans-serif;
+  border-radius: 5px;
+  transition: all 0.25s linear;
   font-size: 1.2rem;
   font-weight: 800;
 }
 
-.main-card-content button:hover {
+.main-card-content a:hover {
   background: #f38067;
+  border-color: #f38067;
 }
 
 @media screen and (max-width: 1420px) {

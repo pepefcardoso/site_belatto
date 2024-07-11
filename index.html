@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Belatto Sorvetes</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="menu-rodape-styles.css" />
+    <link rel="stylesheet" href="components/header/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,10 +23,10 @@
   </head>
   <body>
     <!-- Seção Menu -->
-    <div id="nav-placeholder"></div>
+    <div id="header"></div>
     <script>
       $(function () {
-        $("#nav-placeholder").load("navbar.html");
+        $("#header").load("components/header/index.html");
       });
     </script>
     <!-- Seção Menu -->
@@ -42,10 +42,12 @@
               Cremosos, irresistíveis e inesquecíveis, assim são nossos sorvetes
               e açaís
             </p>
-            <button>Conheça nossos produtos ➜</button>
+            <a href="views/grid-produtos/index.html"
+              >Conheça nossos produtos ➜</a
+            >
           </div>
 
-          <img src="images/card-1.jpg" alt="Imagem 1" />
+          <img src="assets/images/card-1.jpg" alt="Imagem 1" />
         </div>
         <!-- Seção Card Principal -->
 
@@ -61,16 +63,16 @@
 
             <!-- Slides -->
             <div class="slide first">
-              <img src="images/prop_1.jpg" alt="Imagem 1" />
+              <img src="assets/images/prop_1.jpg" alt="Imagem 1" />
             </div>
             <div class="slide">
-              <img src="images/prop_2.jpg" alt="Imagem 2" />
+              <img src="assets/images/prop_2.jpg" alt="Imagem 2" />
             </div>
             <div class="slide">
-              <img src="images/prop_3.jpg" alt="Imagem 3" />
+              <img src="assets/images/prop_3.jpg" alt="Imagem 3" />
             </div>
             <div class="slide">
-              <img src="images/prop_4.jpg" alt="Imagem 4" />
+              <img src="assets/images/prop_4.jpg" alt="Imagem 4" />
             </div>
             <!-- Slides -->
 
@@ -116,14 +118,14 @@
     </div>
 
     <!-- Rodapé -->
-    <div id="rdp-placeholder"></div>
+    <div id="footer"></div>
     <script>
       $(function () {
-        $("#rdp-placeholder").load("rodape.html");
+        $("#footer").load("components/footer/index.html");
       });
     </script>
     <!-- Rodapé -->
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
