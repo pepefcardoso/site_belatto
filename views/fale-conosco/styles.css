@@ -133,39 +133,46 @@ form button:hover {
   background-color: #010b73;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .main {
     flex-direction: column;
-    height: 1000px;
-    padding: 30px 20px;
+    height: 85vh;
+    padding: 0 30px;/
   }
 
   .info-container {
-    gap: 20px;
+    align-items: start;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    margin-bottom: 30px;
   }
 
   #info-icone {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .info-grupo h1 {
     font-size: 2rem;
-    margin-top: 15px;
+    margin-top: 20px;
   }
 
   .info-grupo p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-top: 10px;
   }
 
   .divisor {
     flex-direction: row;
-    width: 80px;
-    height: 20px;
+    width: 80%;
+    height: 3px;
     background-color: #f38067;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 0;
+  }
+
+  .form {
+    align-items: center;
+    margin-top: 30px;
   }
 
   form h1 {
@@ -173,29 +180,45 @@ form button:hover {
   }
 
   form p {
-    font-size: 1rem;
-    margin-top: 10px;
-    text-align: start;
-  }
-
-  form input,
-  button,
-  textarea {
-    margin-top: 10px;
-    font-size: 1rem;
-  }
-
-  form input {
-    padding: 10px;
-  }
-
-  form textarea {
-    height: 150px;
-    padding: 10px;
+    font-size: 1.2rem;
+    margin-top: 15px;
   }
 
   form button {
-    width: 150px;
-    height: 30px;
+    width: auto;
+    height: auto;
+    padding: 15px 60px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+body {
+    height: 100%;
+  }
+
+  .main {
+    height: 100%;
+    padding: 50px 20px;
+  }
+  
+  .info-container {
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 25px;
+  }
+  
+  #info-icone {
+    font-size: 2rem;
+  }
+  
+  .info-grupo h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  
+  .info-grupo p {
+    font-size: 1.2rem;
+    margin-top: 10px;
   }
 }

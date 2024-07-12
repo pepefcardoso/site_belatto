@@ -97,7 +97,7 @@ body {
     font-size: 1.2rem;
   }
 
-  .main-card-content button {
+  .main-card-content a {
     padding: 10px 20px;
     font-size: 1rem;
   }
@@ -126,7 +126,7 @@ body {
     font-size: 1.5rem;
   }
 
-  .main-card-content button {
+  .main-card-content a {
     font-size: 1.2rem;
   }
 }
@@ -141,10 +141,28 @@ body {
   }
 
   .main-card-content p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
-  .main-card-content button {
+  .main-card-content a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-card-content {
+    padding: 20px;
+  }
+
+  .main-card-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .main-card-content p {
+    font-size: 1rem;
+  }
+
+  .main-card-content a {
     font-size: 1rem;
   }
 }
@@ -186,6 +204,7 @@ body {
   margin-top: -40px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .manual-btn {
@@ -259,6 +278,7 @@ body {
 @media screen and (max-width: 1100px) {
   .slider {
     aspect-ratio: 560/700;
+    max-width: 600px;
     width: 100%;
     height: auto;
   }
@@ -272,7 +292,7 @@ body {
   }
 
   .manual-navigation {
-    width: 95%;
+    width: 90%;
     margin-bottom: 40px;
   }
 

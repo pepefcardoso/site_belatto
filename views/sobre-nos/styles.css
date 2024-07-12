@@ -17,13 +17,15 @@ body {
   height: 100%;
   width: 100%;
   margin-top: 60px;
+  box-sizing: border-box;
 }
 
 .historia-container {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   width: 100%;
+  height: 100%;
   gap: 40px;
   box-sizing: border-box;
   padding-left: 60px;
@@ -31,7 +33,10 @@ body {
 }
 
 .historia-container img {
-  width: 100%;
+  width: 50%;
+  max-width: 1000px;
+  height: auto;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
@@ -189,7 +194,7 @@ body {
   .divisor {
     height: 120px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .divisor h1 {
@@ -221,5 +226,26 @@ body {
 
   .missao-conteudo p {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .divisor {
+    height: 90px;
+  }
+
+  .divisor h1 {
+    font-size: 1.5rem;
+  }
+
+  .missao-container {
+    gap: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+  }
+
+  .missao-conteudo h1 {
+    font-size: 1.5rem;
   }
 }

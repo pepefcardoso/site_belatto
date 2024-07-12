@@ -83,14 +83,14 @@
   color: #010b73;
 }
 
-.social {
+.social-nav {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
 
-.social a {
+.social-nav a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,15 +98,16 @@
   text-decoration: none;
 }
 
-.social i {
+.social-nav i {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
   font-size: 1.8rem;
+  color: #fff;
 }
 
-.social i:hover {
+.social-nav i:hover {
   color: #010b73;
 }
 
@@ -134,7 +135,7 @@
     font-weight: 500;
   }
 
-  .social i {
+  .social-nav i {
     font-size: 1.5rem;
   }
 }
