@@ -19,7 +19,7 @@
   box-sizing: border-box;
 }
 
-.menu-container {
+.menu-container-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,7 +29,7 @@
   box-sizing: border-box;
 }
 
-.menu-container a {
+.menu-container-nav a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +47,7 @@
   content: url("../../assets/images/logo_b2.png");
 }
 
-.menu-container ul {
+.menu-container-nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,14 +61,14 @@
   gap: 30px;
 }
 
-.menu-container ul li {
+.menu-container-nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
 }
 
-.menu-container ul li a {
+.menu-container-nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +79,7 @@
   font-weight: 600;
 }
 
-.menu-container ul li a:hover {
+.menu-container-nav ul li a:hover {
   color: #010b73;
 }
 
@@ -115,7 +115,7 @@
     height: 30px;
   }
 
-  .menu-container {
+  .menu-container-nav {
     max-width: 100%;
   }
 
@@ -125,11 +125,11 @@
     content: url("../../assets/images/logo_b4.png");
   }
 
-  .menu-container ul {
+  .menu-container-nav ul {
     gap: 20px;
   }
 
-  .menu-container ul li a {
+  .menu-container-nav ul li a {
     font-size: 1rem;
     font-weight: 500;
   }
@@ -144,7 +144,7 @@
     height: 20px;
   }
 
-  .menu-container {
+  .menu-container-nav {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
@@ -158,13 +158,13 @@
     content: url("../../assets/images/logo_b2.png");
   }
 
-  .menu-container ul {
+  .menu-container-nav ul {
     justify-content: space-between;
     width: 100%;
     margin: 0;
   }
   
-  .menu-container ul li a {
+  .menu-container-nav ul li a {
     font-size: 1rem;
     font-weight: 500;
   }
