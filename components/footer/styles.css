@@ -1,4 +1,4 @@
-.container-escuro {
+.container-escuro-footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,7 +104,7 @@
   color: #f38067;
 }
 
-.container-claro {
+.container-claro-footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,7 +115,7 @@
   padding: 20px;
 }
 
-.container-claro p {
+.container-claro-footer p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,7 +177,7 @@
     font-size: 1.5rem;
   }
 
-  .container-claro {
+  .container-claro-footer {
     flex-direction: column;
     gap: 20px;
     padding: 15px;

@@ -1,11 +1,11 @@
-.container-escuro {
+.container-escuro-nav {
   display: flex;
   height: 40px;
   width: 100%;
   background-color: #010b73;
 }
 
-.container-claro {
+.container-claro-nav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,7 +111,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .container-escuro {
+  .container-escuro-nav {
     height: 30px;
   }
 
@@ -140,7 +140,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .container-escuro {
+  .container-escuro-nav {
     height: 20px;
   }
 
